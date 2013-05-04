@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="t:\code\csharp\Beacons\Test.Beacons\TestResources\NUnitDistrib\testasm\StringCalcTests.dll" total="13" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-09-04" time="23:44:25">
+  <environment nunit-version="2.5.10.11092" clr-version="4.0.30319.225" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="t:\code\csharp\Beacons\Test.Beacons\TestResources\NUnitDistrib" machine-name="RHINY10" user="Gishu" user-domain="RHINY10" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="t:\code\csharp\Beacons\Test.Beacons\TestResources\NUnitDistrib\testasm\StringCalcTests.dll" executed="True" result="Success" success="True" time="0.330" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="StringCalcTests" executed="True" result="Success" success="True" time="0.305" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="TestStringCalculator" executed="True" result="Success" success="True" time="0.300" asserts="0">
+            <results>
+              <test-suite type="ParameterizedTest" name="Add" executed="True" result="Success" success="True" time="0.252" asserts="0">
+                <results>
+                  <test-case name="StringCalcTests.TestStringCalculator.Add returns the same number if input contains one number" executed="True" result="Success" success="True" time="0.210" asserts="2" />
+                  <test-case name="StringCalcTests.TestStringCalculator.Returns zero for blank input" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                  <test-case name="StringCalcTests.TestStringCalculator.Supports custom delimiters via an optional header" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                  <test-case name="StringCalcTests.TestStringCalculator.Supports multiple delimiters of variable length" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                  <test-case name="StringCalcTests.TestStringCalculator.Returns Sum if input contains two comma delimited numbers" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                  <test-case name="StringCalcTests.TestStringCalculator.Returns sum for input containing any amount of numbers" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                  <test-case name="StringCalcTests.TestStringCalculator.Supports newlines as delimiters" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                  <test-case name="StringCalcTests.TestStringCalculator.Supports newlines and commas as delimiters in the same input" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                  <test-case name="StringCalcTests.TestStringCalculator.Ignores numbers greater than 1000" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                  <test-case name="StringCalcTests.TestStringCalculator.Supports custom delimiters of variable length" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                  <test-case name="StringCalcTests.TestStringCalculator.Supports multiple custom delimiters" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                </results>
+              </test-suite>
+              <test-suite type="ParameterizedTest" name="AddThrowsIfInputContainsNegativeNumbers" executed="True" result="Success" success="True" time="0.016" asserts="0">
+                <results>
+                  <test-case name="StringCalcTests.TestStringCalculator.AddThrowsIfInputContainsNegativeNumbers(&quot;1,3,-5&quot;,&quot;Negatives not allowed : -5&quot;)" executed="True" result="Success" success="True" time="0.012" asserts="3" />
+                  <test-case name="StringCalcTests.TestStringCalculator.AddThrowsIfInputContainsNegativeNumbers(&quot;1,3,-5,-9,-11, 13, 15&quot;,&quot;Negatives not allowed : -5,-9,-11&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

@@ -1,0 +1,26 @@
+<TemplatesExport>
+  <Template uid="3dc2982e-a5b6-42b7-9eb6-2bbbef0c8192" shortcut="tfsu" description="NUnit Test Fixture SetUp" text="[TestFixtureSetUp]&#xD;&#xA;public void $METHODNAME$()&#xD;&#xA;{&#xD;&#xA;    $END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="METHODNAME" expression="list(&quot;BeforeAllTests&quot;)" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="cea12699-ecaf-4b4c-9acb-6d55883704fa" shortcut="tftd" description="NUnit test fixture teardown" text="[TestFixtureTearDown]&#xD;&#xA;public void $METHODNAME$()&#xD;&#xA;{&#xD;&#xA;    $END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="METHODNAME" expression="list(&quot;AfterAllTests&quot;)" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="aaf5cda7-0e86-4ec0-96f7-09d0fc919323" shortcut="tes" description="NUnit test method" text="[Test]&#xD;&#xA;public void $BEHAVIOR$()&#xD;&#xA;{&#xD;&#xA;    $ARRANGE$;&#xD;&#xA;    $ACT$;&#xD;&#xA;    Assert$SOMETHING$;&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="BEHAVIOR" expression="" initialRange="0" />
+      <Variable name="SOMETHING" expression="" initialRange="0" />
+      <Variable name="ARRANGE" expression="" initialRange="0" />
+      <Variable name="ACT" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>

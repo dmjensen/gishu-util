@@ -1,0 +1,36 @@
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner,.\slimForDotNet\fitsharp.dll %p}
+!define TEST_RUNNER {.\slimForDotNet\Runner.exe}
+ 
+!path D:\tarpit\\bin\FixtureAndDomainCode.dll
+ 
+!define COLLAPSE_SETUP {true}
+!define COLLAPSE_TEARDOWN {true}
+
+!*> Supporting cast
+
+!|import             |
+|MyTests.SlimFixtures|
+
+|script|quiz|
+
+*!
+
+!*> Contract Tests for any implementation of BoneyMImpersonator
+
+Quiz a contestant about how well they know their BoneyM songs. 
+This is a scenario table that is injected like a macro each time it is called from another table i.e. the following decision table
+!|scenario|quiz                          |impersonator                          |
+|start    |@impersonator                                                        |
+|check    |how did rasputin die|His enemies shot him till he was dead.|
+|reject   |was yesterday sunny                                                  |
+|check    |who runs the baker family     |Ma Baker                              |
+
+*!
+
+Quiz each contestant about how well they know their BoneyM songs. 
+This is a decision table that contains the known implementations of a specific role/interface.
+!|quiz               |
+|impersonator        |
+|My.Domain.BoneyM2000|
+|My.Domain.Wannabe   |

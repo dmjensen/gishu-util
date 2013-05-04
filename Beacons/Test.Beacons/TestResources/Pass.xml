@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="Test.Beacons\bin\release\Test.Beacons.dll" total="33" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-08-28" time="21:58:39">
+  <environment nunit-version="2.5.7.10213" clr-version="2.0.50727.4927" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="w:\code\CSharp\Beacons" machine-name="RHINY10" user="SuperUser" user-domain="RHINY10" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="Test.Beacons\bin\release\Test.Beacons.dll" executed="True" result="Success" success="True" time="10.980" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="ManiaX" executed="True" result="Success" success="True" time="10.932" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="10.917" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Beacons" executed="True" result="Success" success="True" time="10.913" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="IntegrationTests" executed="True" result="Success" success="True" time="6.025" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="TestCSVStateRepository" executed="True" result="Success" success="True" time="0.479" asserts="0">
+                        <results>
+                          <test-case name="ManiaX.Test.Beacons.IntegrationTests.TestCSVStateRepository.CanRetrieveAllStatesOnDemand" executed="True" result="Success" success="True" time="0.273" asserts="1" />
+                          <test-case name="ManiaX.Test.Beacons.IntegrationTests.TestCSVStateRepository.CreatesNewLogFilesPerInstance" executed="True" result="Success" success="True" time="0.042" asserts="1" />
+                          <test-case name="ManiaX.Test.Beacons.IntegrationTests.TestCSVStateRepository.LogsCodebaseTransitionsToCSVFile" executed="True" result="Success" success="True" time="0.021" asserts="2" />
+                          <test-case name="ManiaX.Test.Beacons.IntegrationTests.TestCSVStateRepository.WillRetrieveEmptyListIfNoStateHasBeenPersistedYet" executed="True" result="Success" success="True" time="0.007" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="TestStopwatchAdapter" executed="True" result="Success" success="True" time="5.534" asserts="0">
+                        <results>
+                          <test-case name="ManiaX.Test.Beacons.IntegrationTests.TestStopwatchAdapter.CanMeasureIntervalsRepeatedly" executed="True" result="Success" success="True" time="4.019" asserts="2" />
+                          <test-case name="ManiaX.Test.Beacons.IntegrationTests.TestStopwatchAdapter.ReturnsStartOfIntervalAsCannedValueIfTimerNotStarted" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                          <test-case name="ManiaX.Test.Beacons.IntegrationTests.TestStopwatchAdapter.ReturnsStartOfIntervalOnRequest" executed="True" result="Success" success="True" time="1.504" asserts="1" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="TestCodebaseStateToWPFColorNameConverter" executed="True" result="Success" success="True" time="1.790" asserts="0">
+                    <results>
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateToWPFColorNameConverter.ConvertsACodebaseStateToCorrespondingColorName" executed="True" result="Success" success="True" time="1.788" asserts="4" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="TestCodebaseStateTracker" executed="True" result="Success" success="True" time="2.525" asserts="0">
+                    <results>
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker.DefaultsToUnknownOnCreation" executed="True" result="Success" success="True" time="1.278" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker.NotifiesListenersIfStateChanges" executed="True" result="Success" success="True" time="1.223" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker.StartsTimerOnCreation" executed="True" result="Success" success="True" time="0.018" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="TestCodebaseStateTracker_PersistsPastStates" executed="True" result="Success" success="True" time="0.297" asserts="0">
+                    <results>
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_PersistsPastStates.CanRetrieveAllPastStates" executed="True" result="Success" success="True" time="0.027" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_PersistsPastStates.DoesNotLogStateChangeIfNewStateSameAsOld" executed="True" result="Success" success="True" time="0.198" asserts="0" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_PersistsPastStates.LogsLastStateOnDispose" executed="True" result="Success" success="True" time="0.017" asserts="0" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_PersistsPastStates.LogsStateChangeFromCompilingToCompileErrors" executed="True" result="Success" success="True" time="0.014" asserts="0" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_PersistsPastStates.LogsStateChangeFromCompilingToNoCompileErrors" executed="True" result="Success" success="True" time="0.013" asserts="0" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_PersistsPastStates.LogsStateChangeFromUnknownToCompiling" executed="True" result="Success" success="True" time="0.013" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="TestCodebaseStateTracker_Transitions" executed="True" result="Success" success="True" time="0.042" asserts="0">
+                    <results>
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_Transitions.DoesNotChangeIfSolutionIsClosed" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_Transitions.DoesNotChangeState_IfNewSolutionIsOpenedInUnknownState" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_Transitions.EntersCompileErrorsState_IfBuildSuccessNotificationReceivedInCompilingState" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_Transitions.EntersCompilingState_IfBuildInitiatedInUnknownState" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_Transitions.EntersCompilingState_IfSolutionIsClosedWhenCodeHasCompileErrors" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_Transitions.EntersCompilingState_IfSolutionIsClosedWhenCodeHasNoCompileErrors" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_Transitions.EntersNoCompileErrorsState_IfBuildSuccessNotificationReceivedInCompilingState" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_Transitions.GoesBackToUnknownState_IfSolutionIsClosedWhenCodeHasCompileErrors" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestCodebaseStateTracker_Transitions.GoesBackToUnknownState_IfSolutionIsClosedWhenCodeHasNoCompileErrors" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="TestMainViewModel" executed="True" result="Success" success="True" time="0.144" asserts="0">
+                    <results>
+                      <test-case name="ManiaX.Test.Beacons.TestMainViewModel.CollatesTimeSpentInKnownStates_WhenCurrentStateChanges" executed="True" result="Success" success="True" time="0.088" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestMainViewModel.DisposeFlushesCodeStateTracker" executed="True" result="Success" success="True" time="0.023" asserts="0" />
+                      <test-case name="ManiaX.Test.Beacons.TestMainViewModel.HasNoPhaseInformationOnCreation" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestMainViewModel.RaisePropertyChangedNotificationForPhases_WhenStateChanges" executed="True" result="Success" success="True" time="0.007" asserts="1" />
+                      <test-case name="ManiaX.Test.Beacons.TestMainViewModel.RaisesPropertyChangedNotificationIfCurrentStateChanges" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="ManiaX.Test.Beacons.TestMainViewModel.RelaysCurrentStateInStateTracker" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="TestPieSliceVM" executed="True" result="Success" success="True" time="0.034" asserts="0">
+                    <results>
+                      <test-case name="ManiaX.Test.Beacons.TestPieSliceVM.FormatsTimeSpanInAHumanReadableFormat" executed="True" result="Success" success="True" time="0.032" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
