@@ -1,0 +1,10 @@
+# Visual Studio generated files
+bin/
+obj/
+*.suo
+*.csproj.user
+# NUnit test results
+TestResult.xml
+*.VisualState.xml
+# MSTest
+TestResults/
